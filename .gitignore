@@ -50,3 +50,9 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Clion folder
+.idea/
+
+# VS Code folder
+.vscode/
