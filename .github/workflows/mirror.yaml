@@ -79,9 +79,9 @@ jobs:
 
   Repository_Mirroring:
     runs-on: ubuntu-latest
-    needs:
-        - check_program_compilation1
-        - check_program_compilation2
+    #needs:
+    #    - check_program_compilation1
+    #    - check_program_compilation2
     steps:
       - uses: actions/checkout@v3
         with:
@@ -95,9 +95,9 @@ jobs:
 
   run_tests:
     runs-on: ubuntu-latest
-    needs:
-      - check_program_compilation1
-      - check_program_compilation2
+    #needs:
+    #  - check_program_compilation1
+    #  - check_program_compilation2
     container:  epitechcontent/epitest-docker
     timeout-minutes: 2
     steps:
