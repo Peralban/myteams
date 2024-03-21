@@ -5,9 +5,9 @@
 ## a makefile who that compile my_ftp
 ##
 
-SRC_CLIENT =
+SRC_CLIENT =	src/server/main.c \
 
-SRC_SERVER =
+SRC_SERVER =	src/client/main.c \
 
 OBJ_CLIENT = $(SRC_CLIENT:.c=.o)
 OBJ_SERVER = $(SRC_SERVER:.c=.o)
